@@ -1,4 +1,4 @@
-const { createBrowser } = require('./setup');
+const { createBrowser, setViewport } = require('./setup');
 let browser;
 let page;
 
@@ -11,7 +11,7 @@ const github = {
 beforeAll(async () => {
   browser = await createBrowser();
   page = await browser.newPage();
-  await page.setViewport({ width: 1280, height: 800 });
+  await setViewport(page);
 });
 
 afterAll(async () => {
