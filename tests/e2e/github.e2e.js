@@ -1,4 +1,7 @@
 const puppeteer = require('puppeteer');
+const debug = process.env.TEST_ENV === 'debug';
+const launchOptions = debug ? { headless: false, slowMo: 80 } : {};
+
 let browser;
 let page;
 
@@ -9,7 +12,7 @@ const github = {
 };
 
 beforeAll(async () => {
-  browser = await puppeteer.launch();
+  browser = await puppeteer.launch(launchOptions);
   page = await browser.newPage();
   await page.setViewport({ width: 1280, height: 800 });
 });
