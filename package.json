@@ -4,7 +4,8 @@
   "description": "Jest Puppeteer End-to-End",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "jest --config tests/e2e/config.js"
+    "test:e2e": "jest --config tests/e2e/config.js",
+    "test:e2e:debug": "TEST_ENV=debug npm run test:e2e"
   },
   "repository": {
     "type": "git",
