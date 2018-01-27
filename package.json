@@ -1,0 +1,29 @@
+{
+  "name": "jest-puppeteer-e2e",
+  "version": "1.0.0",
+  "description": "Jest Puppeteer End-to-End",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epilande/jp-e2e.git"
+  },
+  "keywords": [
+    "Jest",
+    "Puppeteer",
+    "End-to-End",
+    "E2E"
+  ],
+  "author": "Emmanuel Pilande",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epilande/jp-e2e/issues"
+  },
+  "homepage": "https://github.com/epilande/jp-e2e#readme",
+  "devDependencies": {
+    "jest": "^22.1.4",
+    "puppeteer": "^1.0.0"
+  }
+}
