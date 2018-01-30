@@ -2,6 +2,8 @@
 
 **End-to-End test with Jest + Puppeteer.**
 
+![jester](https://i.imgur.com/Q1usE98.gif)
+
 ---
 
 #### Clone this repo
