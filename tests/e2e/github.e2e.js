@@ -5,7 +5,7 @@ let page;
 const github = {
   url: 'https://github.com/',
   user: 'epilande',
-  repo: 'yarems',
+  repo: 'jester',
 };
 
 beforeAll(async () => {
@@ -26,7 +26,10 @@ describe('Github view repo', async () => {
   });
 
   test('shows search results after search input', async () => {
-    await page.type('.header-search-input', github.repo);
+    await page.type(
+      '.header-search-input',
+      `user:${github.user} ${github.repo}`,
+    );
     const searchInput = await page.$('.header-search-input');
     await searchInput.press('Enter');
     await page.waitForNavigation();
@@ -34,7 +37,7 @@ describe('Github view repo', async () => {
     expect(repoList).toBeTruthy();
   });
 
-  test('go to repo', async () => {
+  test(`go to repo ${github.user}/${github.repo}`, async () => {
     const repoLink = await page.$(`a[href="/${github.user}/${github.repo}"]`);
     await repoLink.click();
     await page.waitForNavigation();
