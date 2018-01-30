@@ -2,7 +2,7 @@
 
 **End-to-End test with Jest + Puppeteer.**
 
-![jester](https://i.imgur.com/Q1usE98.gif)
+![jester](https://i.imgur.com/6SXC43r.gif)
 
 ---
 
