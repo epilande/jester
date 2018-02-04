@@ -46,7 +46,10 @@ describe('Github view repo', async () => {
   });
 
   test(`should match ${github.user}/${github.repo} snapshot`, async () => {
-    const screenshot = await page.screenshot({ fullPage: true })
-    expect(screenshot).toMatchImageSnapshot();
+    const screenshot = await page.screenshot({ fullPage: true });
+    expect(screenshot).toMatchImageSnapshot({
+      failureThreshold: '0.05',
+      failureThresholdType: 'percent',
+    });
   });
 });
