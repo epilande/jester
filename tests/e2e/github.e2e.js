@@ -1,4 +1,4 @@
-const { createBrowser, setViewport } = require('./setup');
+const { createBrowser, setViewport } = require('./utils');
 let browser;
 let page;
 
