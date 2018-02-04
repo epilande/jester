@@ -25,6 +25,7 @@
   "homepage": "https://github.com/epilande/jester#readme",
   "devDependencies": {
     "jest": "^22.1.4",
+    "jest-image-snapshot": "^2.3.0",
     "puppeteer": "^1.0.0"
   }
 }
